@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<body>
+	<form action="1.php" method="post">
+		<fieldset>
+			<legend>信息注册</legend>
+			用户名:<input type="text" maxlength="6" name="username">
+			<br /><br />
+			密&nbsp;&nbsp;&nbsp;码:<input type="password" name="pwd">
+			<br /><br />
+			籍贯：<select>
+				<option selected="selected">北京</option>
+				<option>河北</option>
+				<option>山东</option>
+				<option>河南</option>
+			</select>
+			<select>
+				<option selected="selected">张家口</option>
+				<option>洛阳</option>
+				<option>西城区</option>
+				<option>济南</option>
+			</select>
+			<select>
+				<option selected="selected">中关村</option>
+				<option>上地</option>
+				<option>西二旗</option>
+				<option>西三期</option>
+			</select>
+			<br /><br />
+			<!-- 不添加name属性，则单选框多选项都能同时勾选 -->
+			性别：<input type="radio" name="gender">男&nbsp;<input type="radio" name="gender">女
+			<br /><br />
+			爱好：<input type="checkbox"> 打篮球 <input type="checkbox"> 打游戏 <input type="checkbox"> 逛街 <input type="checkbox"> 抽烟，喝酒，烫头 
+			<br /><br />
+			请上传帅气的头像:<input type="file">
+			<br /><br />
+			介绍自己:<textarea cols="30" rows="10"></textarea>
+			<br /><br />
+			<input type="submit" value="提交表单">
+			<input type="reset" value="重新填写">
+			<br /><br />
+			<input type="image" src="im.jpg">
+		</fieldset>
+	</form>
+</body>
+</html>

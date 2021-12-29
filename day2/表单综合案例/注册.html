@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 使用京东图标 -->
+	<link rel="icon" href="images/favicon.ico">
+	<meta name="keywords" content="购物，电商">
+	<meta name="description" content="这是一个涵盖注册和登录的购物页面"> 
+	<title>用户注册</title>
+</head>
+<body>
+	<form action="infor.php">
+		<fieldset>
+			<legend>账户信息</legend>
+			<font color="red">*</font>用户名:<input type="text">
+			<br /><br />
+			<font color="red">*</font>密 码：<input type="text">
+			<br /><br />
+			性 别：<input type="radio" name="gender" checked="checked"> 男 <input type="radio" name="gender"> 女 
+		</fieldset>
+		<fieldset>
+			<legend>公司信息</legend>
+			<br />
+			公司名称：<input type="text">
+			<br /><br />
+			公司所在地址： <select>
+				<option>---请选择----</option>
+				<option>北京</option>
+				<option>河北</option>
+				<option>上海</option>
+				<option>山东</option>
+				<option>河南</option>
+			</select>
+			<select>
+				<option>---请选择----</option>
+				<optgroup label="北京">
+				    <option>海淀区</option>
+				    <option>朝阳区</option>
+				    <option>丰台区</option>
+			    </optgroup>
+			    <optgroup label="河北">
+			    	<option>石家庄</option>
+			    	<option>保定</option>
+			    	<option>邯郸</option>
+			    </optgroup>
+			</select>
+			<select>
+			    <option>---请选择----</option>
+				<option>四拨子</option>
+				<option>中关村</option>
+				<option>上地</option>
+				<option>软件园</option>
+			</select>
+			<br /><br />
+			购买类型用途： <input type="checkbox" checked="checked"> IT <input type="checkbox"> 通讯设备 <input type="checkbox"> 大家电 <input type="checkbox"> 办公耗材
+			<br /><br />
+			公司行业： <select multiple="multiple">
+				<option>IT行业</option>
+				<option>计算机软件</option>
+				<option>市场推广</option>
+				<option>广告</option>
+			</select>
+			<br /><br />
+			公司介绍： <textarea cols="30" rows="10"></textarea>
+			<br /><br />
+			营业执照上传： <input type="file">
+			<br /><br />
+			<input type="image" src="images/reg.jpg">
+		</fieldset>
+	</form>
+</body>
+</html>
